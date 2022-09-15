@@ -7,10 +7,10 @@ const WeatherCard = ( {weatherData}) => (
             <Card.Header className="header">
                 City name: {weatherData.name}
             </Card.Header>
-            <p> Temperature: {weatherData.main.temp} </p>
-            <p> Sunrise: {weatherData.sys.sunrise} </p>
-            <p> Sunset: {weatherData.sys.sunset} </p>
-            <p> Description: {weatherData.weather[0].description} </p>
+            <p> Temperature: {weatherData.main.temp} &deg;C </p>
+            <p> Sunrise: {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString('en-IN')} </p>
+            <p> Sunset: {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString('en-IN')} </p>
+            <p> Description: {weatherData.weather[0].main} </p>
         </Card.Content>
     </Card>
 )
