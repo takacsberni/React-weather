@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <script>
+    fetch ('https://api.open-meteo.com/v1/forecast?latitude=47.4984&longitude=19.0408&hourly=temperature_2m')
+        .then( result => {
+            // console.log(result)
+            return result.json();
+        })
+        .then(data => { //data is the parameter of the callback
+            console.log(data);
+        })
+        .catch( error => {
+            console.log(error);
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>
