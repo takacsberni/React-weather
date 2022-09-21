@@ -1,6 +1,7 @@
 # A React application to practise fetching data from an endpoint
 
 This project shows some weather information. The data comes from OpenWeather.com according your location.
+
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
